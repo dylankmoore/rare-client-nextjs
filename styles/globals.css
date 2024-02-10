@@ -18,7 +18,7 @@ a {
 }
 
 body {
-  background-color: #88effd;
+  background-color: whitesmoke;
 }
 
 .navbar-item img {
@@ -75,4 +75,38 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+
+.tags-title {
+  margin-left: 13%;
+}
+
+.tag-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 70px;
+}
+
+.tag-item {
+  position: relative; 
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  border: 1px solid black;
+  background-color: white;;
+  padding: 8px;
+  width: 25%;
+  margin-left: 5px;
+}
+
+.tag-icons {
+  position: absolute;
+  left: -40px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.tag-icons img {
+  cursor: pointer;
+  margin-left: -3px;
 }
