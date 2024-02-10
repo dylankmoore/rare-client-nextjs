@@ -16,11 +16,14 @@ function AppNavBar() {
             <h1 className="title is-4">Rare Publishing</h1>
           </Navbar.Brand>
         </Link>
-        <Nav>
-          <Link passHref href="/">
-            <Nav.Link>Posts</Nav.Link>
-          </Link>
-        </Nav>
+        <Navbar.Toggle aria-controls="responsive-nav" />
+        <Navbar.Collapse id="responsive-nav">
+          <Nav className="ml-auto">
+            <Link passHref href="/">
+              <Nav.Link>Posts</Nav.Link>
+            </Link>
+          </Nav>
+        </Navbar.Collapse>
       </Container>
     </Navbar>
   );
