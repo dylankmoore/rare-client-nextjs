@@ -19,7 +19,7 @@ function AppNavBar() {
         <Navbar.Toggle aria-controls="responsive-nav" />
         <Navbar.Collapse id="responsive-nav">
           <Nav className="ml-auto">
-            <Link passHref href="/">
+            <Link passHref href="/Posts">
               <Nav.Link>Posts</Nav.Link>
             </Link>
           </Nav>
