@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import getAllPosts from '../utils/data/PostData';
+import PostsCard from '../components/Posts/PostsCard';
 
 function Posts() {
   const [getPosts, setPosts] = useState([]);
@@ -11,10 +12,10 @@ function Posts() {
     getAllThePosts();
   }, []);
 
-  console.warn(getPosts);
-
   return (
-    <div>Posts</div>
+    <div className="post-page">
+      {getPosts.map((post) => <PostsCard postObj={post} key={post.id} />)}
+    </div>
   );
 }
 
