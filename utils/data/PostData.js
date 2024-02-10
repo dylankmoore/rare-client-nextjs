@@ -1,5 +1,5 @@
 const getAllPosts = () => new Promise((resolve, reject) => {
-  fetch('http://localhost:7110', {
+  fetch('https://localhost:7110/posts/all', {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',
