@@ -77,15 +77,16 @@ body {
   align-items: center;
 }
 
+/* Tags */
 .tags-title {
   margin-left: 13%;
 }
 
 .tag-container {
-  display: flex;
-  flex-direction: column;
+  flex: 1;
   margin-left: 70px;
-}
+  margin-right: -800px;
+} 
 
 .tag-item {
   position: relative; 
@@ -93,15 +94,15 @@ body {
   align-items: center;
   margin-bottom: 5px;
   border: 1px solid black;
-  background-color: white;;
+  background-color: white;
   padding: 8px;
-  width: 25%;
-  margin-left: 5px;
+  width: 35%;
+  margin-left: 10px;
 }
 
 .tag-icons {
   position: absolute;
-  left: -40px;
+  left: -60px;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -109,4 +110,91 @@ body {
 .tag-icons img {
   cursor: pointer;
   margin-left: -3px;
+}
+
+#tagsubmit {
+  margin-left: 30%;
+}
+
+#deletetag {
+  border: 0;
+}
+
+.create-tag {
+  display: flex;
+  flex-direction: column;
+  margin-top: 7%;
+  margin-right: 35%;
+  align-items: center;
+  margin-left: 8%;
+  border: 1px solid black;
+  padding: 30px;
+  border-radius: 70px;
+}
+
+.tags-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+/* Categories */
+.categories-title {
+  margin-left: 10%;
+}
+
+.category-container {
+  flex: 1;
+  margin-left: 70px;
+  margin-right: -800px;
+} 
+
+.category-item {
+  position: relative; 
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  border: 1px solid black;
+  background-color: white;
+  padding: 8px;
+  width: 35%;
+  margin-left: 10px;
+}
+
+.category-icons {
+  position: absolute;
+  left: -60px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.category-icons img {
+  cursor: pointer;
+  margin-left: -3px;
+}
+
+#deletecategory {
+  border: 0;
+}
+
+.create-category {
+  display: flex;
+  flex-direction: column;
+  margin-top: 7%;
+  margin-right: 30%;
+  margin-left: 8%;
+  align-items: center;
+  border: 1px solid black;
+  padding: 30px;
+  border-radius: 70px;
+}
+
+.categories-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+#catsubmit {
+  margin-left: 30%;
 }
