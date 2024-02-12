@@ -29,13 +29,13 @@ body {
 .cookieCard {
   width: 300px;
   height: 200px;
-  background: linear-gradient(to right,rgb(137, 104, 255),rgb(175, 152, 255));
+  background: linear-gradient(to right,rgb(0, 1, 1),rgb(175, 152, 255));
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
   gap: 20px;
-  padding: 0.5rem;
+  padding: 1rem;
   position: relative;
   overflow: hidden;
   margin: 0.5rem;
@@ -54,7 +54,7 @@ body {
 }
 
 .cookieHeading {
-  font-size: 1.5em;
+  font-size: 1.0em;
   font-weight: 600;
   color: rgb(241, 241, 241);
   z-index: 2;
