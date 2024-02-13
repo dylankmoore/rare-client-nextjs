@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import getAllPosts from '../utils/data/PostData';
+import { getAllPosts } from '../utils/data/PostData';
 import PostsCard from '../components/Posts/PostsCard';
 
 function Posts() {
