@@ -7,6 +7,7 @@ function PostsCard({ postObj }) {
       <div className="cookieCard">
         <p className="cookieHeading">{postObj.title}</p>
         <p className="cookieDescription">{postObj.content}</p>
+        <button id={postObj.id} type="button"> Delete </button>
       </div>
     </>
   );
