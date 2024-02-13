@@ -2,10 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { deletePost } from '../../utils/data/PostData';
 
-function PostsCard({ postObj }) {
+function PostsCard({ postObj, onUpdate }) {
   const handleDelete = (e) => {
     const { id } = e.target;
-    deletePost(id).then();
+    deletePost(id).then(onUpdate);
   };
 
   return (
@@ -25,6 +25,7 @@ PostsCard.propTypes = {
     title: PropTypes.string.isRequired,
     content: PropTypes.string.isRequired,
   }).isRequired,
+  onUpdate: PropTypes.func.isRequired,
 };
 
 export default PostsCard;
