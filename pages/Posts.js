@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import getAllPosts from '../utils/data/PostData';
+import { getAllPosts } from '../utils/data/PostData';
 import PostsCard from '../components/Posts/PostsCard';
 
 function Posts() {
@@ -14,7 +14,7 @@ function Posts() {
 
   return (
     <div className="post-page">
-      {getPosts.map((post) => <PostsCard postObj={post} key={post.id} />)}
+      {getPosts.map((post) => <PostsCard postObj={post} onUpdate={getAllThePosts} key={post.id} />)}
     </div>
   );
 }
